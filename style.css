@@ -255,9 +255,17 @@ footer p
 .contentEditBlock img{
     width: 500px;
 }
-.contentEditBlock h2{
-    color: white;
+.contentEditBlock .pinkH2{
+    color: #f42258;
 }
+.contentEditBlock .blueH2{
+    color: #009fe3;
+}
+
+.contentEditBlock a.btn.btn-danger{
+    margin: 20px;
+}
+
 .cardReadyBg,
 .addAnotherCard{
     width: 230px;
@@ -326,4 +334,11 @@ footer p
     color: #fff;
     font-size: 20px;
     margin: 5px;
+}
+.addressfield{
+    min-height: 100px!important;
+    margin: 0 auto;
+    min-width: 200px;
+    max-width: 400px;
+    width: 400px;
 }
