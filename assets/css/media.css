@@ -1,0 +1,89 @@
+@media \0screen {
+	.dropdown-menu {
+		visibility: hidden;
+	}
+
+	.open > .dropdown-menu {
+		visibility: visible;
+	}
+}
+
+@media (max-width: 1200px) {
+
+
+}
+
+@media (max-width: 979px) {
+
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+}
+
+@media (max-width: 768px) {
+
+
+
+}
+
+@media (max-width: 600px){
+    .h1, h1{
+    font-size: 28px;
+    }
+    h2, .h2{
+        font-size: 24px;
+    }
+
+    h3, .h3{
+        font-size: 22px;
+    }
+    h4, .h4{
+        font-size: 16px;
+    }
+    h5, .h5{
+        font-size: 18px;
+    }
+    .jumbotron p, p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .jumbotron{
+        padding: 10px;
+    }
+    .logo{
+        width: 130px;
+    }
+    .contentEditBlock img{
+        width: 200px;
+    }
+    .contentEditBlock,
+    .paymentBlock{
+        padding: 20px 0;
+    }
+    .btn-lg, .btn-group-lg > .btn{
+        font-size: 16px;
+    }
+    .opaline,
+    .features{
+        padding: 1em 0;
+    }
+    .cardReadyBg, .addAnotherCard{
+        margin: 0;
+    }
+
+
+
+}
+
+@media (max-width: 550px) {
+
+
+}
+
+@media (max-width: 440px) {
+
+}
+
