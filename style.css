@@ -342,3 +342,35 @@ footer p
     max-width: 400px;
     width: 400px;
 }
+.errorsGlobal .container-fluid{
+    background: url("images/errorBg.jpg")0 0 no-repeat transparent;
+    background-size: cover;
+}
+.errorsGlobal .social{
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.errorsGlobal footer{
+    padding-top: 1em;
+}
+.errorsGlobal footer .col-md-8 p{
+    margin-top: 15px;
+}
+.errorsGlobal .jumbotron{
+    color: #0b0b0b!important;
+    text-align: left;
+}
+.errorsGlobal .col-md-9 p{
+    margin-top: 20px;
+}
+.errorsGlobal .jumbotron p strong{
+ color: #0b0b0b;
+}
+.errorsGlobal .jumbotron p small{
+    font-size: 24px;
+    color: #0b0b0b;
+}
+.errorsGlobal .jumbotron h2{
+    font-size: 22px;
+    color: #0b0b0b;
+}
