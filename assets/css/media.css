@@ -25,7 +25,10 @@
 
 @media (max-width: 768px) {
 
-
+    .errorsGlobal footer .col-md-8 p {
+        margin-top: 0;
+        font-size: 13px;
+    }
 
 }
 
