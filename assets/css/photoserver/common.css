@@ -1,0 +1,413 @@
+.photoloaderStyle .modal-body {
+    max-height: none;
+    overflow-y: visible;
+    position: relative;
+}
+
+.photo-loader-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-loader-input {
+    height: 30px;
+}
+
+.btn-margin-right {
+    margin-right: 9px;
+}
+
+.photo-upload-container {
+    position: relative;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: auto;
+
+}
+
+.ano_phototool_preview img {
+    max-width: none;
+}
+
+.photo-loader-input {
+    height: 178px;
+}
+
+div.smal-photo-loader-input input {
+    margin-top: 0;
+    margin-left: 0;
+    height: 32px;
+    width: 32px;
+}
+
+.modal {
+    /*position: absolute;*/
+}
+
+#uploadPictureDialog {
+    width: auto;
+}
+
+.ano_phototool_button {
+    margin: -80px 0px 0px 330px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.ano_phototool_rotateleft {
+    padding-top: 0px;
+}
+
+.ano_phototool_select_area {
+    margin: 0 auto;
+    max-width: 355px;
+}
+
+.ano_phototool_workbench {
+    height: auto;
+    margin: 0;
+}
+
+.ano_phototool_preview {
+    margin: 20px 0 0 150px;
+    position: relative;
+}
+
+.ano_phototool_phototool {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.ano_phototool_workbench {
+    border: 1px solid black;
+    height: 400px;
+    margin: 5px;
+}
+
+.ano_phototool_col1 {
+    float: left;
+    width: 400px;
+}
+
+.ano_phototool_col2 {
+    float: left;
+    width: 120px;
+}
+
+.ano_phototool_button {
+    margin: 5px 30px;
+}
+
+.ano_phototool_preview {
+    background: none repeat scroll 0 0 #cccccc;
+    border: 1px solid black;
+    height: 100px;
+    margin: 30px;
+    overflow: hidden;
+    position: absolute;
+    width: 100px;
+}
+
+.photoloaderStyle .imageAddBlock {
+    background-color: #eeeeee;
+    border: 1px solid #666666;
+    height: 300px;
+    margin: 0 0 10px 10px;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+}
+
+.photoloaderStyle .button {
+    background: -moz-linear-gradient(center bottom, #badbff 0%, #ffffff 100%) repeat scroll 0 0 white;
+    border: 1px solid #336296;
+    border-radius: 0px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.flr {
+    float: right;
+}
+
+#uploadPictureDialog {
+    width: 800px;
+}
+
+.photo-crop-area {
+    padding-right: 100px;
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+}
+
+.ano_phototool_workbench {
+    height: auto;
+    margin: 0;
+    width: auto;
+}
+
+.ano_phototool_controls {
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 100px;
+}
+
+.ano_phototool_controls button {
+    width: 100%;
+    margin-bottom: 7px;
+    position: relative;
+    padding: 5px 5px 3px 23px;
+}
+
+.ano_phototool_controls button i {
+    left: 5px;
+    position: absolute;
+    font-size: 1em;
+}
+
+.ano_phototool_controls button i.icon-backward {
+    font-size: 15px;
+}
+
+.photoloader {
+    visibility: hidden;
+}
+
+.photoloaderStyle .modal-content {
+    background: #ffffff;
+    border-radius:0px;
+    padding: 0;
+    border: 0;
+}
+
+.photo_text {
+    background-color: #ffe9f0;
+    border-radius: 0px;
+    color: #666666;
+    font-size: 13px;
+    margin-top: 5px;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+.photoloaderStyle button.close {
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 100 !important;
+    height: auto;
+    margin: 0;
+    opacity: 0.7;
+    padding: 2px 3px;
+    right: 5px;
+    top: 15px;
+}
+
+.photoloaderStyle button.close:hover,
+.photoloaderStyle button.close:active,
+.photoloaderStyle button.close:focus {
+    opacity: 1;
+}
+
+.photoloaderStyle button.close span {
+    font-size: 24px;
+    font-weight: 100 !important;
+}
+
+.photoloaderStyle .modal-title {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.photoloaderStyle .modal-title i {
+    color: #4cb1c6;
+    font-size: 0.8em;
+    position: relative;
+    text-transform: none;
+    top: 5px;
+
+}
+
+.photo-loader-container {
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+
+div.photo-loader-input {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    height: 40px;
+    cursor: pointer;
+}
+
+div.photo-loader-input input {
+    cursor: pointer;
+    font-size: 150px;
+    height: 60px;
+    margin-left: -410px;
+    margin-top: -28px;
+    opacity: 0;
+}
+
+.photoloaderStyle .control-label {
+    color: #4cb7cd;
+    line-height: 30px;
+}
+
+.photoloaderStyle .col-xs-7 input {
+    width: 100%;
+}
+
+.photoloaderStyle .modal.fade.in {
+    /*top: 30% !important;*/
+}
+
+.photoloaderStyle .modal-dialog {
+    width: 470px;
+}
+
+.photoloaderStyle .photo-uploader-buttons label {
+    color: #333333;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.photoloaderStyle .photo-uploader-buttons input {
+    position: inherit;
+    margin: 0;
+}
+
+.photo-uploader-buttons .col-lg-3{
+    padding: 0;
+}
+.photo-uploader-buttons .col-lg-6 {
+    padding: 0;
+}
+
+.photo-uploader-buttons button {
+    font-size: 13px;
+}
+
+.photo-crop-area div.photo-loader-input {
+    height: 60px;
+    position: inherit;
+}
+.jcrop-keymgr {
+    display: none;
+}
+
+.photoloaderStyle .photoName {
+    background-color: black;
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    height: 30px;
+    margin-top: 10px;
+    min-width: 355px;
+    opacity: 0.6;
+    padding: 0 5px;
+}
+.jcrop-keymgr{
+    visibility: hidden;
+}
+
+.photoloaderStyle .modal-content .modal-body button {
+    width: auto;
+    min-width: 85px;
+    padding: 0 15px 0 15px;
+    height: 28px;
+    line-height: 15px;
+    background-color: #4cb1c6;
+    border: 1px solid #4cb1c6;
+    border-radius: 0px;
+    font-weight: 500;
+    -webkit-transition: all 0.12s linear;
+    -moz-transition: all 0.12s linear;
+    -o-transition: all 0.12s linear;
+    transition: all 0.12s linear;
+}
+.photoloaderStyle .modal-content .modal-body .ano_phototool_controls button{
+    min-width: 100px;
+    padding: 0 15px 0 15px;
+    font-size: 14px;
+}
+.photoloaderStyle .modal-content .modal-body button:focus,
+.photoloaderStyle .modal-content .modal-body button:active,
+.photoloaderStyle .modal-content .modal-body button:hover {
+    background: #39a3b9;
+    border: 1px solid #39a3b9;
+}
+.photoloaderStyle .col-xs-7 input{
+    background-color:#eee ;
+    border: none;
+}
+.photoloaderStyle .modal-header{
+    background-color: #444444;
+    border-radius:0px;
+    padding:15px;
+
+}
+
+.photoloaderStyle .modal-content .modal-body button.btn-cancel {
+    /*margin-right: 10px;*/
+    /*min-width: 85px;*/
+    background: none repeat scroll 0 0 #fafafa;
+    border-color: #ddd;
+    color: #444;
+}
+.photoloaderStyle .modal-content .modal-body button.btn-cancel:focus,
+.photoloaderStyle .modal-content .modal-body button.btn-cancel:active,
+.photoloaderStyle .modal-content .modal-body button.btn-cancel:hover {
+    background: #EEE;
+    border: 1px solid #DDD;
+}
+
+.photoloaderStyle .modal-content .photo-loader-container .btn.btn-success{
+    padding: 0 15px;
+    position: inherit;
+}
+
+.ano_phototool_rotateleft button i {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease 0s;
+}
+
+.ano_phototool_rotateleft button:hover i {
+    transform: rotate(0deg);
+    opacity: 0.6;
+}
+
+.ano_phototool_rotateright button i {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease 0s;
+}
+
+.ano_phototool_rotateright button:hover i {
+    transform: rotate(360deg);
+    opacity: 0.6;
+}
+
+.ano_phototool_undo button:hover i {
+    opacity: 0.6;
+}
+
+.photoloaderStyle .modal-dialog {
+    margin-top: -200px;
+    top: 50%;
+    width: 470px;
+    position: absolute;
+    left: 50%;
+    margin-left: -235px;
+}

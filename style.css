@@ -49,7 +49,7 @@ span.x4:before, i.x4:before
 
 header .container-fluid
 {
-    background-image: url('https://unsplash.it/2560/1707?image=961');
+    background-image: url(images/mainBg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -105,7 +105,7 @@ header .container-fluid
 
 .number .container-fluid
 {
-    background-image: url('https://unsplash.it/3000/2000?image=685');
+    background-image: url('images/bgSecond.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -244,16 +244,21 @@ footer p
     position: relative;
     bottom: -5px;
 }
-.contentEditBlock textarea{
-    min-height: 200px;
-    border: 1px solid #cccccc;
-    width: 100%;
-    padding: 5px;
-    color: #00a6e1;
+.contentEditBlock textarea.messageText {
+    border: medium none;
+    /*color: #00a6e1;*/
+    left: 320px;
     line-height: 26px;
+    min-height: 300px;
+    padding: 5px;
+    position: absolute;
+    top: 120px;
+    width: 215px;
+    outline:none;
 }
+
 .contentEditBlock img{
-    width: 500px;
+    width: 700px;
 }
 .contentEditBlock .pinkH2{
     color: #f42258;
@@ -373,4 +378,32 @@ footer p
 .errorsGlobal .jumbotron h2{
     font-size: 22px;
     color: #0b0b0b;
+}
+.rel{
+    position: relative;
+}
+.inputAddress{
+    position: absolute;
+    right: 340px;
+    top: 203px;
+    width: 220px;
+}
+.inputAddress input{
+    border: none;
+    outline:none;
+    margin-bottom:5px ;
+    width: 100%;
+}
+.errorState{
+    color: red;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 20px;
+    text-align: left;
+}
+.displaymobile{
+    display: none;
+}
+.nonMobile{
+    display: block;
 }

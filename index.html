@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/media.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+    <link rel="stylesheet" href="assets/css/photoserver/common.css">
     <script>
         window.odometerOptions = {
             selector: '.odometer',
@@ -74,9 +75,11 @@
                     <strong>Express mail</strong></h1>
                 <p>This is a simple letter service, <br>
                     that will connect you and your reletives and friends.</p>
-                <p><a href="#about" class="btn btn-primary btn-lg" role="button">Learn more</a>
+                <p>
                     <a href="#step1"
-                       class="btn btn-lg btn-danger" role="button">Start now</a></p>
+                       class="btn btn-lg btn-danger" role="button">Sent card now</a>
+                </p>
+                <p><a href="#about" class="" role="button">Learn more</a></p>
             </div>
         </div>
     </div>
@@ -138,7 +141,7 @@
         <div class="row">
             <div class="col-md-7">
                 <h2>Click to download your photo</h2>
-                <a class="btn btn-danger btn-lg" href="#">Your photo for card <i class="fa fa-arrow-circle-o-right"></i>
+                <a class="btn btn-danger btn-lg" data-toggle="modal" data-target="#photoloader" href="#">Your photo for card <i class="fa fa-arrow-circle-o-right"></i>
                 </a>
                 <p>max size 3 mb</p>
 
@@ -154,28 +157,47 @@
 
 <section id="step2" class="contentEditBlock wow fadeInUp" data-wow-delay="300ms">
     <div class="cloudUp"></div>
+
     <div class="container">
+
         <div class="row">
-           <div class="col-lg-12"> <h2 class="pinkH2">Write a message for the card</h2> </div>
+
+           <div class="col-lg-12 displaymobile"> <h2 class="pinkH2">Write a message for the card</h2> </div>
 
             <div class="col-md-5">
-                <textarea placeholder="My dear Mom! I miss you! so so much!"></textarea>
+
             </div>
 
-            <div class="col-md-7">
+            <div class="col-md-12 text-center rel mobilefixed">
 
-                <img src="images/postcardExample.png">
+                <textarea class="messageText" readonly placeholder="Enter here your message"></textarea>
+
+                <div class="center-block inputAddress">
+
+                    <div class="col-lg-12 displaymobile center-block">
+                    <h2 class="blueH2 text-center col-xs-12"> Write an address for sending</h2>
+                    </div>
+
+
+                    <input placeholder="zip code" type="text">
+                    <input placeholder="street" type="text">
+                    <input placeholder=city type="text">
+                    <input placeholder=state type="text">
+                    <p class="errorState">
+                        Please enter the correct zip code for address
+                    </p>
+
+
+                </div>
+
+
+                <img class="text-center nonMobile center-block" src="images/postcard1.png">
             </div>
         </div>
 
         <div class="row">
 
-           <div class="col-lg-12 center-block">
-               <h2 class="blueH2 text-center col-xs-12"> Write an address for sending</h2> </div>
 
-            <div class="center-block">
-                <textarea class="center-block addressfield" placeholder="California. 95847 76,Nilson street"></textarea>
-            </div>
 
 
         </div>
@@ -254,6 +276,195 @@
         </div>
     </div>
 </footer>
+
+
+<div id="photoloader" class="modal fade photoloaderStyle" tabindex="-1" role="dialog" aria-labelledby="photoloader"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="tooltip-bottom close" title="Close" data-dismiss="modal"><span
+                        class="icon-cross"></span>
+
+                </button>
+                <h4 class="modal-title">Add photo</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="photo-loader-container col-xs-12 col-sm-5 " id="photoLoaderContainer">
+                        <div class="photo-loader-input">
+                            <input type="file" name="file" accept="image/*" data-name="" size="1" class="file"/>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <button class="btn btn-success">Press to load</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="">
+                    <div class="photo_text">
+                        <div class="error_place">
+                            <div class="error">
+                                <span class="icon-circle-cross"></span> Sorry, but your photo is bigger than 6 mb
+                                <button class="btn btn-success" data-toggle="modal" data-target="#photoloaderUp">test button to show second popup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+</div>
+
+
+<div id="photoloaderUp" class="modal fade photoloaderStyle" tabindex="-1" role="dialog" aria-labelledby="photoloaderUp"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="tooltip-bottom close" data-toggle="tooltip" data-placement="right"
+                        title="Close" data-dismiss="modal"><span
+                        class="icon-cross"></span>
+
+                </button>
+                <h4 class="modal-title">Crop the area</h4>
+            </div>
+            <div class="modal-body">
+                <div class="photo-crop-area">
+                    <div style="" class="ano_phototool_controls">
+                        <div class="ano_phototool_rotateleft" data-original-title="" title="">
+                            <button class="btn btn-success"><i class="icon-undo"></i>left</button>
+                        </div>
+                        <div class="ano_phototool_rotateright" data-original-title="" title="">
+                            <button class="btn btn-success"><i class="icon-redo"></i>right</button>
+                        </div>
+                        <div class="ano_phototool_undo" data-original-title="" title="">
+                            <button class="btn btn-success"><i class="icon-backward"></i>back</button>
+                        </div>
+                        <div name="photoUploadedDecisionButtons" class="photo-uploader-buttons">
+                            <div class="">
+                                <button class="btn btn-default  btn-cancel" name="cancel" id="cancel_photo"> go Back
+                                </button>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-success" name="save" id="save_photo">
+                                    Upload
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="uploadPicture">
+                        <div style="" name="photoUploadContainer">
+                            <div name="uploadPictureDialog" title="Charger l'image" class="photo-upload-container">
+                                <div class="ano_phototool_workbench" style="">
+                                    <img src="/photos/workbench?id=fuyzkmjctnpobnbz&amp;r=0"
+                                         class="ano_phototool_photo "
+                                         style="display: none; visibility: hidden; width: 340px; height: 126px;">
+
+                                    <div style="width: 340px; height: 126px; position: relative; background-color: rgb(0, 0, 0);"
+                                         class="jcrop-holder">
+                                        <div style="position: absolute; z-index: 600; width: 116px; height: 116px; top: 10px; left: 10px;">
+                                            <div style="width: 100%; height: 100%; z-index: 310; position: absolute; overflow: hidden;">
+                                                <img src="/photos/workbench?id=fuyzkmjctnpobnbz&amp;r=0"
+                                                     style="border: medium none; visibility: visible; margin: 0px; padding: 0px; position: absolute; top: -10px; left: -10px; width: 340px; height: 126px;">
+
+                                                <div style="position: absolute; opacity: 0.4;"
+                                                     class="jcrop-hline"></div>
+                                                <div style="position: absolute; opacity: 0.4;"
+                                                     class="jcrop-hline bottom">
+
+                                                </div>
+                                                <div style="position: absolute; opacity: 0.4;"
+                                                     class="jcrop-vline right"></div>
+                                                <div style="position: absolute; opacity: 0.4;" class="jcrop-vline">
+
+                                                </div>
+                                                <div class="jcrop-tracker"
+                                                     style="cursor: move; position: absolute; z-index: 360;"></div>
+                                            </div>
+                                            <div style="width: 100%; height: 100%; z-index: 320; display: block;">
+                                                <div style="cursor: n-resize; position: absolute; z-index: 370;"
+                                                     class="ord-n jcrop-dragbar"></div>
+                                                <div style="cursor: s-resize; position: absolute; z-index: 371;"
+                                                     class="ord-s jcrop-dragbar">
+
+                                                </div>
+                                                <div style="cursor: e-resize; position: absolute; z-index: 372;"
+                                                     class="ord-e jcrop-dragbar"></div>
+                                                <div style="cursor: w-resize; position: absolute; z-index: 373;"
+                                                     class="ord-w jcrop-dragbar"></div>
+                                                <div style="cursor: n-resize; position: absolute; z-index: 374; opacity: 0.5;"
+                                                     class="ord-n jcrop-handle"></div>
+                                                <div style="cursor: s-resize; position: absolute; z-index: 375; opacity: 0.5;"
+                                                     class="ord-s jcrop-handle"></div>
+                                                <div style="cursor: e-resize; position: absolute; z-index: 376; opacity: 0.5;"
+                                                     class="ord-e jcrop-handle"></div>
+                                                <div style="cursor: w-resize; position: absolute; z-index: 377; opacity: 0.5;"
+                                                     class="ord-w jcrop-handle"></div>
+                                                <div style="cursor: nw-resize; position: absolute; z-index: 378; opacity: 0.5;"
+                                                     class="ord-nw jcrop-handle"></div>
+                                                <div style="cursor: ne-resize; position: absolute; z-index: 379; opacity: 0.5;"
+                                                     class="ord-ne jcrop-handle"></div>
+                                                <div style="cursor: se-resize; position: absolute; z-index: 380; opacity: 0.5;"
+                                                     class="ord-se jcrop-handle"></div>
+                                                <div style="cursor: sw-resize; position: absolute; z-index: 381; opacity: 0.5;"
+                                                     class="ord-sw jcrop-handle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jcrop-tracker"
+                                             style="width: 344px; height: 130px; position: absolute; top: -2px; left: -2px; z-index: 290; cursor: crosshair;"></div>
+                                        <input type="radio" style="position: fixed; left: -120px; width: 12px;"
+                                               class="jcrop-keymgr">
+                                        <img src="/photos/workbench?id=fuyzkmjctnpobnbz&amp;r=0"
+                                             class="ano_phototool_photo "
+                                             style="display: block; visibility: visible; width: 340px; height: 126px; border: medium none; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; opacity: 0.4;">
+                                    </div>
+                                    <div style="display: none;" class="ano_phototool_preview">
+                                        <img style="width: 293px; height: 109px; margin-left: -9px; margin-top: -9px;"
+                                             src="/photos/workbench?id=fuyzkmjctnpobnbz&amp;r=0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="first_photo_loader_container">
+                        <form method="POST" action="/photos/upload?&amp;id=uubpbdavtdgugaez"
+                              enctype="multipart/form-data" name="add_photo_form" target="add_photo_formiframe">
+                            <div class="photo-loader-container photo-loader-container-hidden row-fluid">
+                                <div class="col-lg-9">
+                                    <div class="progressbarContainer pull-left btn-margin-right" style="display: none;">
+										<span class="loading"><img class="progressbar"
+                                                                   src="../static-int/img/loading.gif">Chargement ... <span></span></span>
+                                    </div>
+                                </div>
+                                <div class="photo-loader-input photo-loader-input-hidden">
+                                    <input type="file" name="file" accept="image/*" data-name="" size="1"
+                                           class="file pinPhoto" data-parent="photoLoaderContainer"></div>
+                                <label data-default="Cette photo n'a pas pu être chargée. Sa taille ne peut excéder 4 MB et elle doit être au format .jpg, .png, ou .gif."
+                                       style="display: none" class="error-label pull-left btn-margin-right"></label>
+                            </div>
+                        </form>
+                        <iframe style="position: absolute; top: -1000px; width: 1px; height: 1px;"
+                                name="add_photo_formiframe"></iframe>
+                        <label style="display: none" class="error-label" id="selectTypeError">Merci de catégoriser
+                            d'image.</label></div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+</div>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
